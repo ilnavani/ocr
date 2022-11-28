@@ -12,7 +12,7 @@ import one_hot
 # Load / dump data
 import pickle
 
-path = '/home/DAVIDSON/mawang1/Workspace/CSC381/implementation-project-dl-f22-hueynataliemaureenilina/'
+path = '/home/DAVIDSON/mawang1/Workspace/CSC381/implementation-project-dl-f22-hueynataliemaureenilina'
 data_dir = os.path.join(path, 'CROHME_full_v2')
 # Construct the argument parse and parse the arguments
 version_choices = ['2011', '2012', '2013']
@@ -73,7 +73,7 @@ def extract_trace_grps(inkml_file_abs_path):
 
     tree = ET.parse(inkml_file_abs_path)
     root = tree.getroot()
-    doc_namespace = "{http://www.w3.org/2003/InkML}"
+    doc_namespace = '{http://www.w3.org/2003/InkML}'
 
     # Find traceGroup wrapper - traceGroup wrapping important traceGroups
     traceGrpWrapper = root.findall(doc_namespace + 'traceGroup')[0]
